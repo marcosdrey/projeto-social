@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+section#telefone {
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 627px;
+    width: 311px;
+    background-image: url(../imagens/frame-iphone.png);
+}
+
+section#icones {
+    text-align:right;
+    padding: 15px;
+    overflow: hidden;
+}
+
+section#icones > a > img {
+    padding-bottom: 15px;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+section#icones > a > img:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+iframe#tela {
+    display: block;
+    margin: auto;
+    height: 471px;
+    width: 267px;
+    position: absolute;
+    top: 80px;
+    left: 22px;
+}
