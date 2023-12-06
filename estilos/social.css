@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+img {
+    width: 100vw;
+}
+a {
+    display: block;
+    width: 100vw;
+    background-color: rgb(184, 4, 4);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px;
+    font-weight: bolder;
+}

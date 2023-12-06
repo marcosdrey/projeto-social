@@ -5,41 +5,59 @@
     padding: 0px;
 }
 
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    background: rgb(223, 95, 56) url('../imagens/fundo-madeira.jpg') top center/cover no-repeat fixed;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
 section#telefone {
-    display: block;
-    margin: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 627px;
     width: 311px;
-    background-image: url(../imagens/frame-iphone.png);
+    background: url('../imagens/frame-iphone.png') no-repeat;
+}
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    height: 471px;
+    width: 267px;
 }
 
 section#icones {
     text-align:right;
-    padding: 15px;
     overflow: hidden;
 }
 
 section#icones > a > img {
-    padding-bottom: 15px;
-    -webkit-transition: -webkit-transform .5s ease;
-    transition: transform .5s ease;
+    width: 55px;
+    border-radius: 50%;
+    margin: 12px 18px 12px 12px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
+    -webkit-transition: -webkit-transform .25s ease;
+    transition: transform .25s ease;
 }
 
 section#icones > a > img:hover {
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.562);
 }
 
-iframe#tela {
-    display: block;
-    margin: auto;
-    height: 471px;
-    width: 267px;
-    position: absolute;
-    top: 80px;
-    left: 22px;
+section#icones > a > img:active {
+    border: 1px solid white;
+    box-sizing:border-box;
 }
